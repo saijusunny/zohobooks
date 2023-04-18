@@ -1,0 +1,24 @@
+{% extends 'nav.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <div class="row fixed-top ml-4 " style="top: 7rem;">
+     <div class="col-md-2" style="border-right: 1px solid white;height: 100vh;">
+       <h6 class="mb-4"><a class="active  " href="{% url 'base' %}"><i class="fa fa-fw fa-home mr-2 "></i> Home</a> </h6>
+       <h6 class="mb-4"><a class="active  " href="{% url 'itemview' %}"><i class="fa-solid fa-sitemap mr-3 "></i>Items</a> <a class="ml-5 active" href="{% url 'additem' %}"><i class="fa-solid fa-plus "></i></a></h6>
+       <h6 class="mb-4"><a class="active  " href="{% url 'banking'%}"><i class="fa-solid fa-building-columns mr-3"></i>Banking</a> <a class="ml-5 active" href="{% url 'additem' %}"><i class="fa-solid fa-plus "></i></a></h6>
+       <h6 class="mb-4"><a class="active  " href="#"><i class="fa-solid fa-cart-shopping mr-3"></i>Sales</a></h6>
+       <h6 class="mb-4"><a class="active  " href="#"><i class="fa-solid fa-basket-shopping mr-3"></i>Purchases</a></h6>
+       <h6 class="mb-4"><a class="active  " href="#"><i class="fa-solid fa-business-time mr-3 "></i>Time Tracking</a></h6>
+        <h6 class="mb-4"><a class="active  " href="#"><i class="fa-solid fa-user mr-3 "></i>Accountant</a></h6>
+        <h6 class="mb-4"><a class="active  " href="#"><i class="fa-solid fa-calendar-week mr-3"></i>Reports</a></h6>
+        <h6 class="mb-4"><a class="active  " href="#"><i class="fa-solid fa-file mr-3"></i>Documents</a></h6>
+         <h6 class="mb43"><a class="active  " href="#"><i class="fa-solid fa-money-bill mr-3 "></i>Payroll</a></h6>
+     </div>
+    
+    
+    </div>
+   
+ </section>
+ 
+{% endblock %}
